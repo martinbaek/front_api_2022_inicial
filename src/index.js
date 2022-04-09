@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
+import PaginaPrincipal from './PaginaPrincipal';
 import reportWebVitals from './reportWebVitals';
+import { Router, Route,Switch, Redirect } from "react-router-dom";
+import Login from './Login';
+import { createBrowserHistory } from 'history';
+import SignUp from './SignUp';
 
+var hist = createBrowserHistory();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={hist}>
+    <Switch>
+      <Route path="/Login" component={Login}/>
+      <Route path="/SignUp" component={SignUp}/>
+      <Route path="/" component={PaginaPrincipal}/>
+
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
