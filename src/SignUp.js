@@ -6,14 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import './App.css';
 
 import ButtonAppBar from './Componentes/BarraSignUp';
+import CuadroSignUp from './Componentes/CuadroSignUp';
 
 function SignUp(){
 return(
     <div className='App'>
         <ButtonAppBar/>
-        <h2>
-           holaaaaaaaa
-        </h2>
+        <CuadroSignUp/>
     </div>
 
 );

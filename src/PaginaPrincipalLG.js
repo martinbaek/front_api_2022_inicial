@@ -4,17 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './App.css';
-import ButtonAppBar from './Componentes/BarraLogin';
-import CuadroLogin from './Componentes/CuadroLogin';
+import BarrraLogueado from './Componentes/BarraLogueado';
+import { Box } from '@mui/material';
 
-function Login(){
+function PaginaPrincipalLG(){
 return(
     <div className='App'>
-        <ButtonAppBar/>
-        
-        <CuadroLogin/>
+        <BarrraLogueado/>
     </div>
 
 );
 }
-export default Login;
+export default PaginaPrincipalLG;

@@ -4,17 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './App.css';
-import ButtonAppBar from './Componentes/BarraLogin';
-import CuadroLogin from './Componentes/CuadroLogin';
+import ButtonAppBar from './Componentes/BarraPrincipal';
+import CuadroOlvido from './Componentes/CuadroOlvido';
 
-function Login(){
+
+
+function Olvido(){
 return(
     <div className='App'>
         <ButtonAppBar/>
-        
-        <CuadroLogin/>
+        <CuadroOlvido/>
     </div>
 
 );
 }
-export default Login;
+export default Olvido;
